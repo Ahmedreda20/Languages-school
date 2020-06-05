@@ -27,8 +27,11 @@ body{
     background: white;
 }
 .log-in-title{
-    margin: 7vh 0;
+    margin: 7vh 0 20px 0;
     display: inline-block;
+}
+.log-in-title h1{
+    line-height: 60px !important;
 }
 .group{
     width: 100%;
