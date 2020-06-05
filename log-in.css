@@ -116,16 +116,14 @@ body{
     font-weight: 600;
     box-shadow: 0 0 10px  #eeecec;
 }
-.footer-with-logo{
+footer{
     width: 100%;
     height: 50px;
-    position: absolute;
-    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer-with-logo a{
+footer a{
     font-size: 15px;
     text-decoration: none;
     color: black;
@@ -170,10 +168,10 @@ body{
         width: 100% !important;
         border-radius: 5px !important;
     }
-    .footer-with-logo{
+    footer{
         text-align: center !important;
     }
-    .footer-with-logo p , a{
+    footer p , a{
         font-size: 15px !important;
         padding: 5px !important;
     }
