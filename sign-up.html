@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./log-in.css">
+    <link rel="stylesheet" href="./sign-up.css">
     <!-- <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/all.min.css"> -->
     <title>LANG SCHOOLS | LOG IN</title>
@@ -13,24 +13,58 @@
         <div class="log-in-box">
 
             <div class="log-in-title">
-                            <h1>LOG IN</h1>
-            <p>Log in and complete your interest</p>
+                            <h1>SIGN UP</h1>
+            <p>Register to follow what is new in that school and we will be at your service at any time</p>
             </div>
             
             <div class="group">
                 <form action="" method="post">
                 <div class="group-form">
+                    <input type="text" name="firstName" id="firstName" placeholder="First name">
+                </div>
+                <div class="group-form">
+                    <input type="text" name="lastName" id="lastName" placeholder="Last name">
+                </div>
+                <div class="group-form">
                     <input type="text" name="email" id="email" placeholder="example@example.com">
+                </div>
+                <div class="group-form">
+                    <input type="text" name="country" id="country" placeholder="country ">
+                </div>
+                <div class="group-form">
+                    <input type="text" name="city" id="city" placeholder="city">
+                </div>
+                <div class="group-form">
+                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="+1 xxx xxxx xxx" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                </div>
+                <div class="group-form">
+                    <input type="number" name="age" id="age" placeholder="age" min="0">
+                </div>
+                <div class="group-form">
+                    <input type="text" name="postal" id="postal" placeholder="postal" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                 </div>
                 <div class="group-form">
                     <input type="password" name="password" id="password" placeholder="Enter password">
                 </div>
+                <div class="group-form">
+                    <label for="male">
+                        <input type="checkbox" name="male" id="male">
+                        Male
+                    </label>
+                    <label for="female">
+                        <input type="checkbox" name="male" id="male">
+                        female
+                    </label>
+                </div>
                 <div class="group-form button">
-                    <input type="submit" name="submit" id="submit" value="LOG IN">
+                    <input type="submit" name="submit" id="submit" value="SIGN UP">
                 </div>
             </form>
                 <div class="group-form signup-page">
-                    <a href="#">I dont have an account!</a>
+                    <a href="#">I already have an account!</a>
+                </div>
+                <div class="group-form signup-page">
+                    <p>Sign up with</p>
                 </div>
                 <div class="group-accounts">
                     <div class="group-form-account">
