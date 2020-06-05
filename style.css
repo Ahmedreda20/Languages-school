@@ -246,6 +246,10 @@ header button a{
    -ms-transition: .5s ease-in-out;
    -o-transition: .5s ease-in-out;
 }
+.buttons a{
+    text-decoration: none;
+    color: white;
+}
 .btn-signup{
     background: #fe346e !important;
     border-color: #fe346e !important;
