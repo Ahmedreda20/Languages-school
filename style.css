@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 *{
     margin: 0;
@@ -6,9 +7,20 @@
 }
 body{
     box-sizing: border-box;
-    height: 100vh;
     font-family: 'Spartan', sans-serif;
+    scroll-behavior: smooth;
+    background: #f9f9f9;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background: #366fd8;
+    border-radius: 100px;
+}
+
 header{
     width: 100%;
     height: 55px;
@@ -186,7 +198,7 @@ header button a{
 }
 .slider{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
     background-repeat: no-repeat;
     background-size: 100% 100% !important; 
@@ -260,12 +272,12 @@ header button a{
 .navbar nav{
     transform-origin: left top;
     transform: rotate(-90deg) translateX(-100%);  
-    width: 70vh;
+    width: 80vh;
     height: 50px;
-    /* background-color: #366fd8; */
     position: fixed;
     top: 10%;
     left: 0;
+    z-index: 10;
   }
   
  .navbar ul{
@@ -294,6 +306,233 @@ header button a{
 .navabr   li:nth-child(2) {
 flex: 2; 
 } 
+.btn-top{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: #366fd8;
+    color: white;
+    border: none;
+    position: fixed;
+    right: -20%;
+    bottom: -20%;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    z-index: 10;
+}
+.btn-top svg{
+    width: 15px;
+}
+.container-about{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.about-box{
+    width: 90%;
+    height: 300px;
+    position: relative;
+    display: block;
+    margin: 50px auto;
+}
+.about-box h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    width: 200px;
+    padding: 10px 0;
+    position: relative;
+}
+.about-box h1::after{
+    width: 50%;
+    height: 5px;
+    background: #fe346e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+}
+.about-box p{
+    margin-top: 3%;
+    line-height: 25px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.half{
+    width: 45%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 5% 0;
+}
+.half img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.half-title{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:  0 25px;
+}
+.container-our-teachers{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 10% auto;
+}
+.our-teachers-box{
+    width: 90%;
+    height:500px;
+    position: relative;
+    display: block;
+    margin: 10px auto;
+}
+.our-teachers-box .teacher{
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+.teacher:hover{
+    background: #366fd8;
+    color:white;
+}
+.teacher:hover .teacher-img{
+    border-color: #fe346e;
+    box-shadow: none;
+}
+.teacher img{
+    display: block;
+    margin: 5% auto;
+    border-radius: 50%;
+    border: 3px solid #366fd8;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    box-shadow: 1px 25px 10px -20px #c1c1c1;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+
+}
+.teacher h1{
+    font-size: 20px;
+    line-height: 50px;
+}
+.teacher p{
+    font-size: 15px;
+    padding: 10px;
+    line-height: 20px;
+}
+.stars{
+    width: 100%;
+    position: relative;
+}
+.stars svg{
+    width: 20px;
+    display: inline-block;
+    margin: 10px 5px;
+}
+.stars svg path{
+    fill: gold;
+}
+.slick-prev , .slick-next{
+    display: none !important;
+}
+.slide-fixed{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    background: url('https://i.pinimg.com/originals/bc/cb/8f/bccb8f779ef2d54139a2c4e6623e430e.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.our-location{
+    width: 90%;
+    height: 50vh;
+    position: relative;
+    display: block;
+    margin: 5% auto;
+}
+footer{
+    width: 100%;
+    height:  auto;
+    position: relative;
+    background: #366fd8;
+    color: white;
+}
+footer nav{
+    display: inline-flex;
+    max-width: 100%;
+    margin: 5% 15px;
+    position: relative;
+}
+footer nav ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+footer nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    transition: .5s ease;
+}
+footer nav ul li a:hover{
+    color: #2e5bad;
+}
+footer nav ul li a  svg{
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.footer-copyright{
+    width: 100%;
+    height: 50px;
+    background: #2e5bad;
+    color: #f3f3f3;
+    position: relative;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-popup{
+    width: 100%;
+    height: 100%;
+    background: #366fd860;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
 @media only screen and (max-width:480px){
     header .desktop , .btn-log{
         display: none;
@@ -319,6 +558,27 @@ flex: 2;
 }
 .buttons button{
     font-size: 15px;
+}
+.about-box{
+    height: auto;
+    width: 90%;
+}
+.half-title{
+    position: relative;
+    padding: 0;
+}
+.half{
+    width: 100%;
+    display: block !important;
+    margin: 10% auto;
+}
+.half img{
+    position: relative !important;
+    height: 35vh;
+    /* display: none; */
+}
+footer nav{
+    display: flex;
 }
 }
 @media only screen and (min-width:481px) and  (max-width:991px){
@@ -348,4 +608,16 @@ flex: 2;
 .buttons button{
     font-size: 15px;
 }
+.about-box{
+    width: 95%;
+}
+footer nav{
+    display: flex;
+}
+}
+@media only screen and (min-width:2000px){
+    .about-box , .our-teachers-box , .our-location{
+        width: 70%;
+    }
+
 }
